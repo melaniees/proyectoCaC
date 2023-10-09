@@ -1,0 +1,148 @@
+/*
+Comentario multilinea
+*/ 
+
+/*Etiqueta*/
+/*
+p{
+    font-size: 30px;
+    color: red;
+} 
+
+/*Clases*/
+/*
+.parrafoPrincipal{
+    font-size: 25;
+    color: blueviolet;
+} 
+
+/*Id*/
+/*
+#contenidoPrincipal{
+    background-color: green; /*color fondo de la etiqueta*/
+/*} 
+
+#parrafoFooter{
+    font-size: 12px;
+    color: aquamarine;
+}*/
+
+/*todos los elementos sin margen ni padding*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /*la caja queda del tamaño que le doy, no afecta el borde*/
+}
+.header{
+    background-color:rgba(0, 0, 0, 0.575);
+    height: 10vh; /*ocupa el 10% de la pantalla*/
+    padding-top: 20px;
+    padding-left: 50px;
+    position:sticky;/*no pierde su lugar cuando lo muevo*/
+    top: 0px;
+    
+    
+    .linkNav{
+    display: inline-block;
+    text-align: center;    
+    text-decoration: none;
+    color: black;
+    border: 1px solid gray;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    background-color: rgb(253,156,156);
+    width: 100px;
+    }
+} 
+
+.padreDivs{
+    background-color: yellow;
+    .hijo{
+        width: 200px;
+        height: 200px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .hijoUno{     
+        background-color: #5ffbf188;  
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        z-index: -10;
+    }
+    .hijoDos{
+        background-color:rgba(238, 130, 238, 0.345);
+    }
+}
+/*herencia*/
+.seccionPrincipal{
+    font-size: 40px;
+    color: red;
+
+}
+.seccionPrincipal .ovejaNegra{
+    color: aqua;
+}
+.main{
+    height: 1200px;
+    background:linear-gradient(to right, #7e7f80, #cdcaca06, #706f702c, #cdcaca06),url("../assets/img/vaquita.jpg");
+    background-image: url("../assets/img/vaquita.jpg");
+    background-size: cover; /*imagen ocupa todo el contenedor*/
+    background-position: center; /*centrada*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;/*que este fija*/
+    
+}
+.parrafo{
+    line-height: 1.2;/*interlineado*/
+    color: white;
+    font-weight: 700;
+} 
+.padreLink{
+    text-align: center;
+}
+.link{
+    display: inline-block;/*segui comportando en linea pero con las propiedades como si fuera en bloque */
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 0 20px; /*0 en top y botton , 20 en left y right, se separan 40 entre cajas*/
+    /*margin-right:20px, se separa 20px entre las cajas*/
+    height: 100px;
+    width: 100px;
+}
+.box{
+    display: block;
+    background-color: pink;
+    height: 200px;
+    width: 200px;
+    margin: 10px 20px 30px 40px;
+    margin: 10px auto; /*centrar en el eje x, caja centrada*/
+    border: 5px solid fuchsia;
+    padding: 10px; /*no se puede centrar, poner auto no existe*/
+    text-align: center; /*centro el contenido de la caja en el eje X*/
+    
+    
+}
+.footer{
+    .padreWsp{
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        .wsap{
+            color: rgb(0,255,0);
+            font-size: 5rem;
+        }
+
+    }
+  /*  height: 600px;
+    background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    font-weight: 100;
+*/
+
+    
+}

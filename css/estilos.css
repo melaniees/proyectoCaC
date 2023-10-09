@@ -1,0 +1,530 @@
+/*Reseteo de valores que hay por defecto*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navegacionFlex{
+    /*tecnica pero limito al contenedor
+    width: 90%;
+    margin: 0 auto;
+    */
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color:  rgb(53,58,64);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .contenedorLogoNav{
+        display: flex;
+        align-items: center;
+        .Logo{
+            width: 100px;
+        }   
+    }
+
+    .nav{
+        .listaNav{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            
+            .listaItem{
+                padding-right: 20px ;
+                list-style: none;  
+            .linkNav{
+                text-decoration: none;
+            }
+            } 
+        }
+        
+    
+    }
+} 
+
+.colorWhite{
+    color: white;
+}
+
+.colorGris{
+    color: gray;
+}
+    
+.colorVerde{
+    color:green;
+} 
+.backgrYellow{
+    background-color: rgb(254, 193, 7);
+}
+.backgrSky{
+    background-color: rgb(23,162,183);
+}
+.backgrGr{
+    background-color: rgb(108,117,124);
+}
+.backgrRed{
+    background-color: rgb(220,53,69);
+}
+.buttonComprar{
+    color: white;
+    background-color: rgb(41, 167,68);
+    border: 1px solid black;
+} 
+.buttonEnviar{
+    color: white;
+    background-color: rgb(150, 201,62);
+    border: 1px solid black;
+    width: 495px;
+}
+
+.sectionConferencia{
+    background-color: aquamarine;
+    height: 85vh;
+    background-size: 50%;
+    background-image:linear-gradient(to right, #00060aa9, #0f010180),url("../assets/img/ba1.jpg");
+   /* background-image: url("../assets/img/ba1.jpg");*/
+    background-size: cover; /*imagen ocupa todo el contenedor*/
+    background-position: center; /*centrada*/
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;/*que este fija*/
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-bottom: 100px;
+    flex-direction: column;
+   
+   
+    .sectionConferenciaTexto{
+       text-align:end ;
+        width: 35%;
+        margin-right: 80px;
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+       .titulo{
+        margin-bottom: 7px;
+        
+       }
+    }
+    .sectionConferenciaAnclas{
+        margin-right: 70px;
+    }
+}
+#oradores{
+    height: 550px;
+    margin-top: 20px;
+    
+    .sectionOradoresh2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+    
+    .divConoce{
+        font-size: 0.5rem;
+        font-weight: normal;
+        }
+    }
+
+    .sectionOradoresPadreTarjeta{
+        display: flex;
+       /* justify-content: space-between;*/
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .tarjeta{
+            border: 1px solid rgb(219, 215, 215);
+            font-size: 0.7rem;
+            /*text-align: center;*/
+            width: 250px;
+            height: 450px;
+            .contenedorTarjeta{
+                padding: 10px;
+            }
+            .tarjetaEncabezado{
+                display: flex;
+                flex-direction: row;
+                
+                .botonOrador{
+                    padding: 3px;
+                    border: 1px solid white;
+                    border-radius: 4px;
+                    text-decoration: none;
+                    margin-right: 3px;
+                    font-size: small;
+                    
+                }
+                
+            }
+            .tarjetaTitulo{
+                font-size: 1rem;
+                margin-top: 5px;
+            }
+            .tarjetaParrafo{
+                margin-top: 5px;
+            }
+            
+        }
+        .tarjeta img{
+            width: 100%;
+            height: 50vh;
+            object-fit:cover;/*que se estire ocupando el espacio del contenedor sin deformarse*/
+        } 
+    }
+} 
+
+.nombreApellido{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    display: flex;
+    gap: 12px;
+    
+    .largo{
+        width: 240px;
+        
+    }
+    
+   
+}
+
+.boton{
+    padding: 7px;
+    border: 1px solid white;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: small;
+    
+} 
+
+
+.contenedorFlexible{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    .sectionLugarFechaImg{
+        width: 100%;/*el ancho q ocupe todo el contenedor*/
+        height: 50vh;/*que ocupe la mitad del alto de la pantalla*/
+        background-image: url("../assets/img/honolulu.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .sectionLugarFechaTexto{
+        background-color: rgb(53,58,64);
+        width: 100%;
+        height: 50vh;
+        text-align: left; /*NO USAR CENTER*/
+        /*para que el texto quede centrado:*/
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 10px;
+        /*FIN para que el texto quede centrado:*/
+        line-height: 1.2;
+        .sectionLugarFechaTextoP{
+            padding-top: 5px;
+            padding-bottom: 10px;
+            font-size: 0.7rem;
+        }
+        .sectionLugarFechaTextoBotonConoce{
+            width: fit-content;
+        }
+    }
+} 
+/*
+.lugarFecha{
+    height: 500px;
+    display: flex;
+    align-items:flex-start;
+    gap: 2px;/*espacio entre columnas
+    background-color: white;
+    
+    .bsasOctubre{
+        background-color: rgb(53,58,64);
+        color: white;
+        
+    }
+
+    .hijo{
+
+        font-size: 0.7rem;
+        /*text-align: center;
+        height: 80vh;
+        width: 100vh;
+        display: flex;
+       /* align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+
+    } 
+    
+    .hijo img{
+        width: 100vh;
+        height: 100vh;
+        object-fit:cover;/*que se estire ocupando el espacio del contenedor sin deformarse
+    } 
+} */
+
+.conoce{
+    display:flex;
+}
+
+.orador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    .tituloOrador{
+        display: flex;
+        justify-content: center;
+        font-size: 0.5rem;
+        font-weight: normal;
+    }
+    .p1{
+        margin-top: 4px;
+        font-size: 0.8rem;
+    }
+    .p2{
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: gray;
+        font-size: 0.8rem;
+    }
+    
+}
+
+
+
+
+
+.footer{
+    margin-top: 20px;
+    .navFooter{
+        height: 50px;
+        
+        background-image: linear-gradient(to right, #1c3846, #1c3f51, #1c455b, #1d4c67, #1e5372);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+          
+        .nav{
+            .listaNav{
+                margin: 0;
+                padding: 0;
+                display: flex;
+                font-size: 0.7rem;
+                align-items: center;
+                justify-content: center;
+                .listaItem{
+                    padding-right: 70px;
+                    list-style: none;  
+                    .linkNav{
+                        text-decoration: none;
+                    }
+                } 
+            }
+            
+        
+        }
+            /*.listaNav{
+                
+                text-decoration: none;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                font-size: 0.7rem;
+                align-items: center;
+               
+            }
+            .listaItem{
+                padding-right: 85px ;
+                
+            }
+            .linkNav{
+                list-style: none;
+                text-decoration: none;
+                
+
+            }*/
+        
+        
+    }
+
+    .padreWsp{
+        position: fixed;
+        bottom: 50px;
+        right: 15px;
+        .wsap{
+            color: rgb(0,255,0);
+            font-size: 4rem;/*tamaño del icono*/
+        }
+
+    }
+
+
+}
+
+/*ES DESKTOP FIRST, DISEÑO AHORA PARA MOBILE, desde la pantalla mas pequeña hasta la tablet*/
+@media screen and (min-width:0px) and (max-width:991px) {
+    .navegacionFlex{
+        flex-direction: column;
+        padding-left: 5px;
+        padding-right: 5px;
+        justify-content: left;
+        align-items: start;
+        padding-bottom: 5px;
+        padding-top: 10px;
+        
+        .contenedorLogoNav{
+            padding-left: 5px;           
+        }
+
+    } 
+    .nav{
+        .listaNav{
+            flex-wrap: wrap;
+            .listaItem{
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+        }
+    }
+    .contenedorFlexible{
+        flex-direction: column;
+        .sectionLugarFechaImg{
+            height: 50vh;
+        }
+        .sectionLugarFechaTexto{
+            height: 50vh;
+            .h2{
+                font-size: 1.4rem;
+            }
+            .sectionLugarFechaTextoP{
+                font-size: 0.9rem;
+            }
+        }
+    } 
+
+    #oradores{
+        height: 2000px;
+        .sectionOradoresPadreTarjeta{
+          
+        flex-direction: column;
+            .tarjeta{
+                height: 500px;
+                .tarjeta img{
+                    width: 100%;
+                    height: 20%;
+                    object-fit:cover;/*que se estire ocupando el espacio del contenedor sin deformarse*/
+                }  
+            }
+        }
+    }
+    .orador{
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        .p1{
+           padding-top: 10px;
+        }
+        .formulario{
+           width: 100%;
+           .comentario{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            gap: 10px;
+                .comen{
+                    border: 1px solid black; 
+                }
+           }
+        .nombreApellido{
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            gap: 10px;
+           .largo{
+            width: 100%;
+            height: fit-content;
+            border: 1px solid black;    
+           }
+           
+          
+        }
+        }
+    }
+
+    .buttonEnviar{
+        width: 100%;
+    }
+    .footer{ 
+        .navFooter{
+            height:max-content;
+            .nav{
+                .listaNav{
+                    flex-wrap: wrap;        
+                    .listaItem{
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+                }    
+        
+            }
+    
+        }
+    } 
+ 
+
+
+
+} 
+
+      
+/*
+header .listaItem{
+    list-style: none;
+    display: inline;
+}
+.linkNav{
+    
+}
+.contenedorLogoNav{
+    background-color: rgb(53,58,64);
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+
+.footer{
+    background-image: linear-gradient(to right, #1c3846, #1c3f51, #1c455b, #1d4c67, #1e5372);
+} 
+
+footer a{
+    color:white;
+} 
+
+footer nav ul li{
+    list-style: none;
+    display: inline;
+} 
+
+footer nav ul li a{
+    text-decoration: none;
+    
+}
+
+.botonEnviar{
+    background-color: rgb(150, 201, 62);
+    
+} 
+
+
+.bsasOctubre{
+    background-color: rgb(53, 58, 64);
+}
